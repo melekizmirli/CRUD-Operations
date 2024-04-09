@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariata Homes Assistance Application Form</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Mariata Homes Assistance Application Form</h2>
+
+        <form action="process-form.php" method="post" enctype="multipart/form-data">
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="fullName">Full Name(s):</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" class="form-control" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telephone">Telephone:</label>
+                    <input type="tel" class="form-control" id="telephone" name="telephone">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="nextOfKin">Next of Kin:</label>
+                    <input type="text" class="form-control" id="nextOfKin" name="nextOfKin">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Recent Passport Photograph:</label>
+                <input type="file" class="form-control-file" id="photo" name="photo" accept="image/*" required>
+            </div>
+
+            <!-- Health Information -->
+            <div class="form-group">
+                <label for="illness">Any Illness:</label>
+                <textarea class="form-control" id="illness" name="illness"></textarea>
+            </div>
+
+            <!-- Residence Information -->
+            <div class="form-group">
+                <label for="lastResidence">Last Residence Address:</label>
+                <textarea class="form-control" id="lastResidence" name="lastResidence"></textarea>
+            </div>
+
+            <!-- Recommendation Details -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="recommendedSource">Recommended Source:</label>
+                    <select class="form-control" id="recommendedSource" name="recommendedSource" required>
+                        <option value="police">Police</option>
+                        <option value="prison">Prison</option>
+                        <option value="immigration">Immigration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="recommendedSourceAddress">Recommended Source Address:</label>
+                    <textarea class="form-control" id="recommendedSourceAddress" name="recommendedSourceAddress" required></textarea>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
